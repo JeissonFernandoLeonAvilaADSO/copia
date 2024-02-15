@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 16px;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  height: 55px;
+}
+
+.header__menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav{
+
+}
+
+.header__navlist{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__item{
+  padding: 16px;
+}
+
+.nav__link{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.nav__link--secondary{
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+}
+
+.nav__btn{
+  border: none;
+  font-size: 18px;
+  background: transparent;
+}
+
+#inicio{
+  background-image: url(saludo.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: calc(100%);
+  /* background-size: cover; */
+
+}
+
+.inicio{
+
+}
+
+.inicio__titulo{
+  font-size: 40px;
+}
+
+.titulo__secondary{
+  font-size: 20px;
+}
+
+#center_cont{
+  height: 100vh;
+  display: flex;
+  width: calc(100vh - 200px);
+  height: calc(100vh - 117px);
+  justify-content: center;
+  flex-direction: column;
+}
