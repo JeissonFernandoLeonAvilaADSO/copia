@@ -13,7 +13,7 @@
 
 <body>
   <header class="header">
-    <div class="container header__menu">
+    <div class="header__menu container">
       <div>
         <img src="logo.png" alt="#">
       </div>
@@ -35,7 +35,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
   </header>
   <!-- Seccion inicio -->
@@ -43,46 +42,49 @@
     <section id="inicio">
       <div class="container">
         <div id="center_cont">
+          <h1 class="inicio__titulo">
+            Lor. <span class="titulo__secondary">em ipsum dolor</span>
+          </h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem a non deserunt porro sed ut
+            aperiam quidem!
+          </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam tempore earum numquam quisquam
+            eligendi voluptatum iste, tempora commodi asperiores quibusdam voluptatem porro, voluptate molestias ab
+            culpa
+            dolorem mollitia enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
           <div>
-            <h1 class="inicio__titulo">
-              Lor. <span class="titulo__secondary">em ipsum dolor</span>
-            </h1>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem a non deserunt porro sed ut
-              aperiam quidem!
-            </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam tempore earum numquam quisquam
-              eligendi voluptatum iste, tempora commodi asperiores quibusdam voluptatem porro, voluptate molestias ab
-              culpa
-              dolorem mollitia enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div>
-              <button><a href="#">Lets Start</a></button>
-              <button><a href="#">Read More</a></button>
-            </div>
+            <button class="inicio__btn inicio__btn--secondary"><a class="btn__link btn__link--prpl" href="#">Lets
+                Start</a></button>
+            <button class="inicio__btn"><a class="btn_link btn__link--secondary" href="#">Read
+                More</a></button>
           </div>
-          <div>
-            <button>
-              <i class="bi bi-arrow-left"></i>
-            </button>
-            <button>
-              <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>          
         </div>
+      </div>
+      <div class="container" id="Arrows_cont">
+        <button class="inicio__btn">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="inicio__btn">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
       </div>
     </section>
 
     <!-- banner -->
-    <section>
+    <section id="second">
       <div class="container">
-        <div>
-          <p>lorem, ipsum</p>
-        </div>
-        <div>
-          <p>edition</p>
-          <p>2022</p>
+        <div id="center_cont2">
+          <div class="second_itemCont">
+            <p class="itemCont__item">lorem, ipsum</p>
+          </div>
+          <div class="second_itemCont">
+            <p class="itemCont__item itemCont__item--second">edition 2022</p>
+          </div>
         </div>
       </div>
     </section>
@@ -90,55 +92,81 @@
     <!-- Explore -->
     <section>
       <div class="container">
-        <div>
-          <p>explore</p>
-          <p>online curses</p>
-        </div>
-        <div>
-          <figure>
-            <img src="#" alt="persona">
-          </figure>
+        <div id="center_cont3">
+          <div class="grid_container">
+            <div class="grid_container__Contitem">
+              <p class="grid_container__grid_item start"><span class="grid_item__textB">Explore.</span></p>
+              <p class="grid_container__grid_item grid_container__grid_item--Mod startRot">online curses</p>
+              <h1 class="grid_container__grid_item start"><span class="inicio__titulo">UI.</span> courses</h1>
+            </div>
+            <div class="grid_container__Contimg">
+              <figure class="container__figure">
+                <img class="figure__img" src="persona.png" alt="persona">
+              </figure>
+              <div class="grid_container__contBtn">
+                <button class="container__btn">
+                  <i class="bi bi-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="grid_container__Contitem">
+              <p class="grid_container__grid_item end">about</p>
+              <p class="grid_container__grid_item grid_container__grid_item--Mod endRot">online curses</p>
+              <p class="grid_container__grid_item end"><span class="grid_item__text">
+                  <b><i class="bi bi-square-fill"></i>start Learning</b>
+                </span></p>
+            </div>
 
+          </div>
         </div>
-        <div>
-          <p>about</p>
-          <p>online curses</p>
-        </div>
-      </div>
     </section>
-    <button>
-      <i class="bi bi-arrow-down"></i>
-    </button>
+
     <section>
       <div class="container">
-        <div>
-          <h1>level 1</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
-            Consequatur eum, iste enim amet accusantium porro, recusandae officia mollitia commodi, dicta corporis
-            laborum
-            facere est?</p>
-          <a href="#">Read more</a>
-        </div>
-        <div>
-          <h1>level 2</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
-            Consequatur
-            eum, iste enim amet accusantium porro, recusandae officia mollitia commodi, dicta corporis laborum facere
-            est?
-          </p>
-          <a href="#">Read more</a>
-        </div>
-        <div>
-          <h1>level 3</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
-            Consequatur
-            eum, iste enim amet accusantium porro, recusandae officia mollitia commodi, dicta corporis laborum facere
-            est?
-          </p>
-          <a href="#">Read more</a>
+        <div class="container__cardCont">
+          <div class="cardCont__card">
+            <div id="center">
+              <div>
+                <h1>level .<span class="card__titulo">01</span></h1>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
+              </p>
+              <button class="card__btn">
+                <a href="#">Read more</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="cardCont__card">
+            <div id="center">
+              <div>
+                <h1>level .<span class="card__titulo">02</span></h1>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
+              </p>
+              <button class="card__btn">
+                <a href="#">Read more</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="cardCont__card">
+            <div id="center">
+              <div>
+                <h1>level .<span class="card__titulo">03</span></h1>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur ex nobis atque maiores.
+              </p>
+              <button class="card__btn">
+                <a href="#">Read more</a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
 
     <!-- trabajos -->
@@ -146,7 +174,8 @@
     <section>
       <div class="container">
         <div>
-          <h1>Lorem, ipsum dolor</h1>
+          <h1 class="grid_container__grid_item start"><span class="inicio__titulo">UI.</span> how it work<span
+              class="inicio__titulo">s</span></h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat culpa similique, quis rerum eaque maxime
             nostrum. Et ad totam perspiciatis nostrum. Eveniet natus dolorum magni ipsa consequuntur placeat harum
             error!</p>

@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  
 }
 
 
 body{
   font-size: 16px;
-  background-color: #f2f2f2;
+  background-color: white;
   font-family: "Open Sans", sans-serif;
+}
+
+section{
+  margin: 4rem 0;
 }
 
 .container{
@@ -17,7 +23,7 @@ body{
 }
 
 .header{
-  height: 55px;
+  height: max-width((--hg_nav));
 }
 
 .header__menu{
@@ -74,7 +80,7 @@ body{
 }
 
 .inicio__titulo{
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .titulo__secondary{
@@ -82,10 +88,230 @@ body{
 }
 
 #center_cont{
-  height: 100vh;
   display: flex;
-  width: calc(100vh - 200px);
-  height: calc(100vh - 117px);
+  width: calc(50vw - 200px);
+  height: calc(100vh - (var(--hg_nav)));
   justify-content: center;
   flex-direction: column;
 }
+
+.inicio__btn{
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.inicio__btn--secondary{
+  background-color: #b885fd;
+  padding: 16px 32px;
+}
+
+
+.btn__link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.btn__link--secondary{
+  text-decoration: none;
+  color: black;
+}
+
+.btn__link--prpl{
+  color: white;
+  text-decoration: none;
+}
+
+#Arrows_cont{
+  display: flex;
+  justify-content: space-between;
+}
+
+#second{
+  background-color: black;
+}
+
+#center_cont2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second__itemCont{
+
+}
+
+.itemCont__item{
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.itemCont__item--second{
+  width: 100px;
+  border: 2px solid white;
+}
+
+#center_cont3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  height: calc(100%);
+  width: calc(100%);
+}
+
+
+
+.container__figure{
+  display: flex;
+  justify-self: center;
+}
+
+.figure__img{
+  width: 100%;
+}
+
+.grid_container__Contitem{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid_container__Contimg{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.grid_container__contBtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container__btn{
+  width: 50px;
+  height: 50px;
+}
+
+.grid_container__grid_item{
+  font-weight: 550;
+  font-size: 30px;
+}
+
+.grid_container__grid_item--Mod{
+    font-size: 15px;
+    height: 30px;
+
+}
+
+.grid_item__text{
+  font-size: 15px;
+}
+
+.grid_item__textB{
+  font-weight: bold;
+}
+
+.grid_item__text i{
+  padding-right: 10px;
+}
+
+.startRot{
+  transform: rotate(-90deg);
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+
+.endRot{
+  transform: rotate(-90deg);
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.start{
+    padding-left: 1.6rem;
+    align-self: flex-end;
+}
+
+
+.end{
+  justify-self: flex-end;
+  padding-right: 1.6rem;
+  align-self: flex-end;
+}
+
+.container__cardCont{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#center{
+  align-self: center;
+}
+
+.cardCont__card{
+  display: flex;
+  margin: 0 1rem;
+  text-align: center;
+  border: solid 4px white;
+  border-radius: 2.5rem;
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 50px 0.1px rgb(194, 194, 194);
+  height: 20rem;
+  width: 15rem;
+}
+
+.cardCont__card:hover{
+  border: solid 4px #b885fd;
+}
+
+.sep{
+  width: 10px;
+  height: 1px;
+}
+
+.cardCont__card h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card__titulo{
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.card__text{
+  padding: 0.5rem;
+}
+
+.card__btn{
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b885fd;
+  border: none;
+  color: white;
+}
+
+.card__btn a{
+  text-decoration: none;
+}
+
+
+:root{
+  --hg_nav: 80px;
+}
+
